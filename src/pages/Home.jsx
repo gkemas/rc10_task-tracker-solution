@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <Header tasks={tasks} setTasks={setTasks} />
-      <ShowTasks tasks={tasks} handleChange={handleChange} />
+      <ShowTasks tasks={tasks} handleChange={handleChange}/>
     </div>
   );
 };

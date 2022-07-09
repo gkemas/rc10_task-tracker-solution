@@ -1,16 +1,14 @@
 import { AiOutlineClose } from "react-icons/ai";
-const ShowTasks = ({tasks,handleChange,isDone}) => {
+const ShowTasks = ({tasks,handleChange}) => {
   return( <>
    {tasks.map((item,i)=>{
      const{id,isDone}=tasks
-     
+     console.log(item);
     return(
       <div className="task task-h3" 
       onClick={()=>{handleChange(i)}}>
          <div>
-        <p>{item.isDone}</p>
-        <p className={changeClass}       
-         key={id}>{item.task}</p>
+        <p key={id}>{item.task}</p>
         <p>{item.day}</p>        
          </div>
          <button className="btnClose"><AiOutlineClose/></button>
