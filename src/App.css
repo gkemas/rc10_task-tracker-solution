@@ -88,4 +88,6 @@ body {
 }
 .btnClose{
   border: none;
+  color: red;
+  cursor: pointer;
 }
