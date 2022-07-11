@@ -7,7 +7,7 @@ const handleSubmit = (e) =>{
  e.preventDefault();
  const id = new Date().getTime();
  const newTask = {id:id, task:task, day:day, 
-isDone:"false "};
+isDone:false};
 setTasks([...tasks,newTask]);
 setTask("");
 setDay("");

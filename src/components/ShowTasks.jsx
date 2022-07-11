@@ -5,8 +5,9 @@ const ShowTasks = ({tasks,handleChange,deleteTask}) => {
      const{id}=item;
      console.log(item);
     return(
-      <div className="task task-h3" key={id}>
-         <div onClick={()=>handleChange(item.id)} >
+      <div className="task-h3" key={id}>
+         <div onClick={()=>handleChange(item.id)} className={item.isDone ? "done":"task"}>
+         {/* // style={{textDecoration:item.isDone && "line-through",cursor:"pointer"}} */}
         <p>{item.task}</p>
         <p>{item.day}</p>        
          </div>
